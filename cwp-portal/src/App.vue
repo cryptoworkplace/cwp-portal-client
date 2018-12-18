@@ -1,14 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <v-header/>
+
     <router-view/>
+
+    <v-footer/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import Header from '@/components/Header.vue'
+  import Footer from '@/components/Footer.vue'
+
+  export default {
+    name: 'App',
+    components: {
+      'v-header': Header,
+      'v-footer': Footer
+    },
+  }
 </script>
 
 <style>

@@ -49,7 +49,13 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+        include: [
+          resolve('src'),
+          resolve('test'),
+          resolve('node_modules/webpack-dev-server/client'),
+          path.resolve(__dirname, "src"), // white-list your app source files
+          require.resolve("bootstrap-vue"), // white-list bootstrap-vue
+        ]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -70,18 +76,13 @@ module.exports = {
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
+        // include:[
+        //   require.resolve("flat-icons"),
+        // ],
         options: {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      },
-      {
-        test: /\.js$/,
-        include: [ // use `include` vs `exclude` to white-list vs black-list
-          path.resolve(__dirname, "src"), // white-list your app source files
-          require.resolve("bootstrap-vue"), // white-list bootstrap-vue
-        ],
-        loader: "babel-loader"
       }
     ]
   },

@@ -6,7 +6,7 @@
         <div class="m-stack__item m-brand  m-brand--skin-dark ">
           <div class="m-stack m-stack--ver m-stack--general">
             <div class="m-stack__item m-stack__item--middle m-stack__item--center m-brand__logo">
-              <a href="index.html" class="m-brand__logo-wrapper">
+              <a href="/" class="m-brand__logo-wrapper">
                 <img alt="" src="assets/demo/media/img/logo/logo.png" />
               </a>
             </div>
@@ -35,10 +35,11 @@
             </div>
           </div>
         </div>
-
         <!-- END: Brand -->
         <div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
-
+          <!-- BEGIN: Horizontal Menu -->
+          <v-hor-menu/>
+          <!-- END: Horizontal Menu -->
         </div>
 
       </div>
@@ -47,8 +48,13 @@
 </template>
 
 <script>
+  import HorizontalMenu from '@/components/Header/HorizontalMenu.vue'
+
   export default {
     name: 'Header',
+    components:{
+      'v-hor-menu': HorizontalMenu,
+    },
     data() {
       return {
 

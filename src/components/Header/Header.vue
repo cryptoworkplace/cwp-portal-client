@@ -38,6 +38,10 @@
         <!-- END: Brand -->
         <div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
           <!-- BEGIN: Horizontal Menu -->
+          <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-dark" id="m_aside_header_menu_mobile_close_btn">
+            <i class="la la-close"></i>
+          </button>
+
           <v-hor-menu/>
           <!-- END: Horizontal Menu -->
         </div>

@@ -1,6 +1,8 @@
 <template>
   <div class="m-grid m-grid--hor m-grid--root m-page" id="app">
+    <!-- BEGIN: Header -->
     <v-header/>
+    <!-- END: Header -->
 
     <!-- begin::Body -->
     <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">

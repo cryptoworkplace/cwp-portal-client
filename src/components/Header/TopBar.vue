@@ -235,26 +235,26 @@
             </div>
           </div>
         </li>
-        <b-nav-item-dropdown class="m-nav__item
-m-topbar__user-profile
-m-topbar__user-profile--img
-m-dropdown
-m-dropdown--medium
-m-dropdown--arrow m-dropdown--header-bg-fill
-m-dropdown--align-right
-m-dropdown--mobile-full-width
-m-dropdown--skin-light" text="Lang" right>
-          <!-- Using button-content slot -->
-          <template slot="button-content">
-             <span class="m-topbar__userpic">
-                  <img src="@/assets/demo/media/img/users/user3.jpg" alt="">
-                </span>
-          </template>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
-        </b-nav-item-dropdown>
+        <!--<b-nav-item-dropdown class="m-nav__item-->
+<!--m-topbar__user-profile-->
+<!--m-topbar__user-profile&#45;&#45;img-->
+<!--m-dropdown-->
+<!--m-dropdown&#45;&#45;medium-->
+<!--m-dropdown&#45;&#45;arrow m-dropdown&#45;&#45;header-bg-fill-->
+<!--m-dropdown&#45;&#45;align-right-->
+<!--m-dropdown&#45;&#45;mobile-full-width-->
+<!--m-dropdown&#45;&#45;skin-light" text="Lang" right>-->
+          <!--&lt;!&ndash; Using button-content slot &ndash;&gt;-->
+          <!--<template slot="button-content">-->
+             <!--<span class="m-topbar__userpic">-->
+                  <!--<img src="@/assets/demo/media/img/users/user3.jpg" alt="">-->
+                <!--</span>-->
+          <!--</template>-->
+          <!--<b-dropdown-item href="#">EN</b-dropdown-item>-->
+          <!--<b-dropdown-item href="#">ES</b-dropdown-item>-->
+          <!--<b-dropdown-item href="#">RU</b-dropdown-item>-->
+          <!--<b-dropdown-item href="#">FA</b-dropdown-item>-->
+        <!--</b-nav-item-dropdown>-->
         <li class="m-nav__item
 m-topbar__user-profile
 m-topbar__user-profile--img

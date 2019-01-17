@@ -85,14 +85,15 @@ module.exports = {
           require.resolve("bootstrap-vue"), // white-list bootstrap-vue
         ],
         loader: "babel-loader"
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
       }
+      // ,
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     'style-loader',
+      //     'css-loader'
+      //   ]
+      // }
     ]
   },
   node: {
